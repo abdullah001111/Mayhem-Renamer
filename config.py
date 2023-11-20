@@ -26,19 +26,19 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "27382214")
+    API_HASH  = os.environ.get("API_HASH", "6a3913eb3f026ab02e7ac1c420df2ad0")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6813953047:AAG9pXsGP_RQ9rv2oyqxbyXU9EaTyYKfOVw") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","shifa")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://shifa:shifa@cluster0.vs37wy0.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5984303934').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "Mayhem_Bots") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
     # wes response configuration     

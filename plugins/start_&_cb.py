@@ -33,7 +33,7 @@ from config import Config, Txt
 async def start(client, message):
     user = message.from_user
     await db.add_user(client, message)                
-    button = InlineKeyboardMarkup([
+    button = InlineKeyboardMarkup([[
         ],[
         InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/Mayhem_Bots'),
         InlineKeyboardButton('💁‍♂️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/Mayhem_Support')
